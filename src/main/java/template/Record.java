@@ -1,11 +1,12 @@
 package template;
 
+// template
 public abstract class Record {
 
   // template method
   public final void save() {
     if (!validate()) {
-      System.out.println("Validation failed");
+      System.out.println("Validation failed: " + this.getClass().getSimpleName() );
       return;
     }
     beforeSave();
