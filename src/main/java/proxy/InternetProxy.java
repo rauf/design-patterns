@@ -1,7 +1,9 @@
 package proxy;
 
+import java.util.Arrays;
 import java.util.List;
 
+// proxy
 public class InternetProxy implements Network {
 
     private List<String> blockedWebsites;
@@ -9,7 +11,7 @@ public class InternetProxy implements Network {
 
     public InternetProxy() {
         this.internet = new Internet();
-        this.blockedWebsites = List.of("abc.com", "xyz.net");
+        this.blockedWebsites = Arrays.asList("abc.com", "xyz.net");
     }
 
     @Override

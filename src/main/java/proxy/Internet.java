@@ -1,5 +1,6 @@
 package proxy;
 
+// real subject
 public class Internet implements Network {
 
     @Override
